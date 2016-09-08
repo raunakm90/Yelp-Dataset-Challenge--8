@@ -5,6 +5,7 @@
 # Download dataset from -
 # https://www.yelp.com/dataset_challenge
 # You need to fill in your details to get api key
+# Save it in ./Data folder
 # Once the data is extracted no need to run this script again
 
 # Directory structure -
@@ -62,4 +63,4 @@ if __name__ == '__main__':
     ar = tarfile.open(par_dir+tar_filePath)
     ar.extractall(path = par_dir+"\Data", members=safemembers(ar))
     ar.close()
-    print ("Yelp .tar file extracted to ./Data folder")
+    print ("Yelp .tar file extracted to .\Data folder")
